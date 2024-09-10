@@ -6,10 +6,10 @@ authors = ["AtomAlpaca <atal@anche.no>"]
 description = "Agda extension for zed"
 repository = "https://github.com/AtomAlpaca/zed-agda"
 
-[grammars.gleam]
+[grammars.agda]
 repository = "https://github.com/tree-sitter/tree-sitter-agda"
 commit = "d710ff14d15ddee3764fd73a0837c6c4c8c913e9"
 
-[language_servers.agda]
-name = "Agda LSP"
+[language_servers.agda-language-server]
+name = "Agda"
 language = "Agda"
