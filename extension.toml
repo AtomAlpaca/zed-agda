@@ -11,5 +11,5 @@ repository = "https://github.com/tree-sitter/tree-sitter-agda"
 commit = "d710ff14d15ddee3764fd73a0837c6c4c8c913e9"
 
 [language_servers.agda-language-server]
-name = "Agda"
+name = "agda-language-server"
 language = "Agda"
