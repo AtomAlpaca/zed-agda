@@ -62,6 +62,15 @@ impl AgdaExtension {
                 zed::DownloadedFileType::Zip,
             )
             .map_err(|e| format!("failed to download file: {e}"))?;
+
+            let entries =
+                fs::read_dir(".").map_err(|e| format!("failed to list working directory {e}"))?;
+            for entry in entries {
+                let entry = entry.map_err(|e| format!("failed to load directory entry {e}"))?;
+                if entry.file_name().to_str() != Some(&version_dir) {
+                    fs::remove_dir_all(entry.path()).ok();
+                }
+            }
         }
         Ok(binary_path)
     }
