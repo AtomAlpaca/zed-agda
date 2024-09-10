@@ -1,0 +1,15 @@
+id = "agda"
+name = "agda"
+version = "0.0.1"
+schema_version = 1
+authors = ["AtomAlpaca <atal@anche.no>"]
+description = "Agda extension for zed"
+repository = "https://github.com/AtomAlpaca/zed-agda"
+
+[grammars.gleam]
+repository = "https://github.com/tree-sitter/tree-sitter-agda"
+commit = "d710ff14d15ddee3764fd73a0837c6c4c8c913e9"
+
+[language_servers.agda]
+name = "Agda LSP"
+language = "Agda"
